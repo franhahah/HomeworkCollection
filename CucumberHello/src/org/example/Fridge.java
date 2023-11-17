@@ -20,5 +20,6 @@ public class Fridge {
 
     public int getStock() {
         return stock;
+
     }
 }
