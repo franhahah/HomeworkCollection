@@ -14,12 +14,11 @@ public class MyFirstSteps {
     WebElement archiveLink;
     WebElement searchImput;
 
+
     @Given("I am on the homepage")
     public void I_am_on_the_homepage(){
         webDriver.get("https://www.themoviedb.org/");
     }
-
-
 
     @Given("Cursor is in search field and type Barbie")
         public void cursor_is_in_search_field_and_type_Barbie () {
