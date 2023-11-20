@@ -11,7 +11,7 @@ public class PasswordValidatorTest {
     private PasswordValidator validator=new PasswordValidator();
 
     @Test
-    public void GoodPassword() {
+    public void goodPassword() {
         PasswordValidator validator = new PasswordValidator();
         String password = "P@ssw0rd";
         //boolean expectedResult = true;

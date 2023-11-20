@@ -1,7 +1,5 @@
 package org.example.cucumber;
 
-
-
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -15,19 +13,19 @@ public class StepDefinitions {
     private int remainingBottles;
 // check of int1 >=0
 // Yess oke
+
     // nee Illegalargument
 
     @Given("I have {int} water bottles")
     public void i_have_water_bottles(int int1) {
         fridge = new Fridge(int1);
     }
-
-
 // hier wordt dezelfde variabele gebuikt int1 voor have an int1 voor drunk???
 
     @Given("I have drunk {int} water bottles")
-    public void i_have_drunk_water_bottles(int int1) {
-        fridge.Take(int1);
+    public void i_have_drunk_water_bottles(int drunkBottles) {
+        fridge.Take(drunkBottles);
+
     }
 
     @When("I go to my fridge")
@@ -35,13 +33,10 @@ public class StepDefinitions {
         remainingBottles = fridge.getStock();
 
     }
-// int1 is toch begin waarde, er moet iets anders vergeleken worden
+
     @Then("I should have {int} water bottles")
-    public void i_should_have_water_bottles(int int1) {
-        Assert.assertEquals(int1, remainingBottles);
-
-//test github
-
+    public void i_should_have_water_bottles(int expBottles) {
+        Assert.assertEquals(expBottles, remainingBottles);
 
 
 

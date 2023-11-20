@@ -7,9 +7,9 @@ Feature: Hello First Feature
     Then I should have <in stock> water bottles
     Examples:
       | opening balance | processed | in stock |
-      | 10              | 1         | 5        |
+      | 5               |   4       |   1      |
       | 1               | 1         | 0        |
-      | 0               | 4         | 2        |
-      | 500              | 150         | 2        |
-      | 0               | 4         | -2        |
+      | 500              | 100      | 400     |
+      | 500              | 150      | 350     |
+      | 8               | 4         | 4      |
 

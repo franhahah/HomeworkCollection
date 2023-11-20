@@ -3,10 +3,15 @@ package org.example;
 public class Fridge {
     private int stock;
 
+
+
     public Fridge(int stock) {
         this.stock = stock;
     }
-//check if amount>=stock
+
+
+
+    //check if amount>=stock
     // error message
     // else stock=stock-amount
     public void Take(int amount) {
@@ -15,9 +20,8 @@ public class Fridge {
             throw new IllegalArgumentException("amount is too big, there is not enough"); }
         else{
 */
-        stock = stock - amount;
+        stock = stock - amount;///this toegevoegd!
     }
-
     public int getStock() {
         return stock;
 
