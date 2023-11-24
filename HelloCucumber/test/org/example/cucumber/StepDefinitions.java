@@ -1,12 +1,11 @@
 package org.example.cucumber;
 
-
-
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.example.Fridge;
 import org.junit.Assert;
+import static org.junit.Assert.assertEquals;
 
 public class StepDefinitions {
     private Fridge fridge;

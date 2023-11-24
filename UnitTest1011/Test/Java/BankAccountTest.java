@@ -93,6 +93,23 @@ public class BankAccountTest {
         assertEquals("Insufficient funds", thrown.getMessage());
     }
 
+////transfer to other bankaccount
+//    zet amount:500
+//    check amount
+ //   chek toaccount
+//     transfer:100
+//    check
+    @Test
+    public void tranferPosAmountOtherAccount(){
+        account.deposit(500);
+        account.transfer("9999as",100);
+        assertEquals("balance is", 10, account.getBalance(), 0.1);
+        assertEquals(9999as,100, account.getBalance());
+
+
+    }
+
+
 
 }
 

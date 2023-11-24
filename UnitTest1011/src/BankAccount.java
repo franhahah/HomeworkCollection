@@ -1,6 +1,7 @@
 public class BankAccount {
     private double balance;
     private final String accountId;
+    private String toAccount;
 
     public BankAccount(String accountId) {
         this.accountId = accountId;

@@ -1,6 +1,4 @@
-public class Fridge {
     package org.example;
-
     public class Fridge {
         private int stock;
 
@@ -16,4 +14,4 @@ public class Fridge {
             return stock;
         }
     }
-}
+

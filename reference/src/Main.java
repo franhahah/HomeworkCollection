@@ -1,4 +1,7 @@
-import static org.junit.jupiter.api.Assertions.assertEquals;// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
+import static org.junit.Assert.*;
+
+
+// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
@@ -13,19 +16,23 @@ public class Main {
             // for you, but you can always add more by pressing Ctrl+F8.
             System.out.println("i = " + i);
         }
-
-        @Test
-//    void passByValueTest() {
-//        }
-
-            void addOne (int number){
-                number = number + 1;
-            }
-
-            void myValue = 1337;
-            //Act
-            addOne(myValue);
-            //Assert
-            assertEquals(1337, myValue);
     }
+
+
+
+
 }
+
+//        @Test
+//        public void addOne (int number){
+//
+//                number = number + 1;
+//            }
+//
+//            int myValue = 1337;
+//            //Act
+//            addOne(myValue);
+//            //Assert
+//            assertEquals(1337, myValue);
+
+

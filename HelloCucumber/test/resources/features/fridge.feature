@@ -10,5 +10,5 @@ Feature: Fridge
     Examples:
       | opening balance | processed | in stock |
       | 10              | 1         | 9        |
-      | 10              | 6         | 6        |
+      | 10              | 6         | 4        |
       | 0               | 1         | 0        |
