@@ -9,7 +9,8 @@ Feature: Hello First Feature
       | opening balance | processed | in stock |
       | 5               |   4       |   1      |
       | 1               | 1         | 0        |
-      | 500              | 100      | 400     |
-      | 500              | 150      | 350     |
-      | 8               | 4         | 40      |
+      | 500             | 100       | 400      |
+      | 500             | 150       | 350      |
+      | 4               | 8         | 0        |
+      | 4               | -8       | 12      |
 

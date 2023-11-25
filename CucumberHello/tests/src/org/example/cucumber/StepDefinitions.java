@@ -11,16 +11,13 @@ public class StepDefinitions {
     private Fridge fridge;
 
     private int remainingBottles;
-// check of int1 >=0
-// Yess oke
 
-    // nee Illegalargument
 
     @Given("I have {int} water bottles")
-    public void i_have_water_bottles(int int1) {
-        fridge = new Fridge(int1);
+    public void i_have_water_bottles(int totalBottles) {
+        fridge = new Fridge(totalBottles);
     }
-// hier wordt dezelfde variabele gebuikt int1 voor have an int1 voor drunk???
+
 
     @Given("I have drunk {int} water bottles")
     public void i_have_drunk_water_bottles(int drunkBottles) {
@@ -37,8 +34,5 @@ public class StepDefinitions {
     @Then("I should have {int} water bottles")
     public void i_should_have_water_bottles(int expBottles) {
         Assert.assertEquals(expBottles, remainingBottles);
-
-
-
     }
 }
