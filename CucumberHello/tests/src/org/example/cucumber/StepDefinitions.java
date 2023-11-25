@@ -12,7 +12,6 @@ public class StepDefinitions {
 
     private int remainingBottles;
 
-
     @Given("I have {int} water bottles")
     public void i_have_water_bottles(int totalBottles) {
         fridge = new Fridge(totalBottles);

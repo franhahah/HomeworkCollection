@@ -8,7 +8,6 @@ public class Fridge {
         this.stock = stock;
     }
 
-
     //check if amount>=stock
     // error message
     // else stock=stock-amount
