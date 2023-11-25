@@ -53,7 +53,6 @@ public class MyFirstSteps {
         assertEquals (expectedResult, actualResult);
 
     }
-
    @After
     public void CleanUp() {
        webDriver.close();
