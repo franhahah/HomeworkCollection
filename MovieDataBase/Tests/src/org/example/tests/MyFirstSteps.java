@@ -1,5 +1,6 @@
 package org.example.tests;
 
+import io.cucumber.java.After;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -53,13 +54,9 @@ public class MyFirstSteps {
 
     }
 
-//   @After
-//    public void CleanUp() {
-//       webDriver.close();
-//   }
-
-
-
-
+   @After
+    public void CleanUp() {
+       webDriver.close();
+   }
 
 }
