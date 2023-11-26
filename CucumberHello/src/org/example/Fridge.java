@@ -1,5 +1,7 @@
 package org.example;
 
+import static org.junit.Assert.assertThrows;
+
 public class Fridge {
     private int stock;
 
@@ -13,10 +15,11 @@ public class Fridge {
     // else stock=stock-amount
     public void Take(int amount) {
             if (amount <= stock) {
-                //throw new IllegalArgumentException("amount to big"); }
-                stock = stock - amount;
-            } else {
 
+                stock = stock - amount;
+            } else
+            {
+                //throw new IllegalArgumentException("TO MUCH");
                 stock = 0;
             }
         }
